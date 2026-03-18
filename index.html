@@ -341,5 +341,13 @@
     <script src="skills/reserva.js"></script>
     <script src="skills/servicios.js"></script>
     <script src="js/main.js"></script>
+     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+      createChat({
+            webhookUrl: 'https://edesme30.app.n8n.cloud/webhook/48a2d9cd-95d6-40d0-aa9c-29f28a8fa6af/chat',
+            target: '#n8n-chat',
+            mode: 'window',
+            initialMessages: ['¡Hola! 👋', 'Me llamo sandra. ¿En qué puedo ayudarte hoy?'],
+            i18n: { es: { title: 'Asistente La Trattoria', subtitle: "Estamos aquí para ayudarte.", inputPlaceholder: 'Escribe tu pregunta...' } }
+        });
 </body>
 </html>
